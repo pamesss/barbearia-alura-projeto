@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&display=swap");
+@import url(./footer.css);
+@import url(./content.css);
+@import url(./header.css);
+
+:root {
+  --white: #ededed;
+  --black: #1b1b1d;
+  --navyblue: #192144;
+  --darkblue: #002e66;
+  --green: #90df94;
+}
+* {
+  margin: 0; padding: 0;
+  height: fit-content;
+  box-sizing: content-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--navyblue);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background-image: url("../imgs/banner2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}

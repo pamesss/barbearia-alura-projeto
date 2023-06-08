@@ -1,62 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Barbearia Alura | Home</title>
+    <link href="./styles/styles.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="./styles/media-queries.css"/>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Barbearia Alura | Home</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  <body>
+    <header>
+      <h1 class="header__title">&#62;Barbearia <strong class="header__title-detail">Alura&#95;</strong>
+      </h1>
+      <input type="checkbox" id="toggleMenu">
+      <label for="toggleMenu" class="nav__menu-icon"><img src="./imgs/hamburger_menu.png" alt="Botão para abrir o menu"></label>
+      <nav class="nav__responsive-menu">
+        <ul class="nav__container">
+          <li class="nav__responsive_btn"><a class="nav__menu selected__menu" href="#">Home</a></li>
+          <li class="nav__responsive_btn"><a class="nav__menu" href="#">Sobre Nós</a></li>
+          <li class="nav__responsive_btn"><a class="nav__menu" href="#">Loja</a></li>
+          <li class="nav__responsive_btn"><a class="nav__menu" href="#">Serviços</a></li>
+          <li class="nav__responsive_btn"><a class="nav__menu" href="#">Fale Conosco</a></li>
+          <li class="nav__responsive_btn"><a class="nav__appointment-btn" href="#">Agende um horário</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <h1 class="shop-title">>Barbearia <div class="text-detail">Alura_</div>
-    </h1>
-    <nav class="navBar">
-      <div class="navBar-box">
-        <a class="pageLink-style" href="#">Home</a>
-        <a class="pageLink-style" href="#">Sobre Nós</a>
-        <a class="pageLink-style" href="#">Loja</a>
-        <a class="pageLink-style" href="#">Serviços</a>
-        <a class="pageLink-style" href="#">Nossa Agenda</a>
-        <a class="pageLink-style" href="#">Fale Conosco</a>
-      </div>
-      <a class="navBar-appointment" href="#">Agendar um horário</a>
-    </nav>
-  </header>
+    <main>
+      <h2 class="introduction_about-us">Sobre a &#62;Barbearia Alura&#95;</h2>
 
-  <main>
-    <h2 class="aboutUs-title">Sobre a >Barbearia Alura_</h2>
-    <section class="section1">
-      <p class="aboutUs-text">Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o
-        que há de melhor para seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista
-        novos clientes a cada dia.</p>
-      <p class="shop-mission"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos
-            clientes."</strong></em></p>
-      <div class="carouselPhotos">
-        <div class="haircut-card">
-          <img class="cover" src="img/haircut3-unsaturated.png" alt="">
-          <img class="haircut" src="img/haircut3.png" alt="A client's photo">
+      <section class="sections__style">
+        <p class="sections__text-style">
+          Localizada no coração da cidade  de Santos-SP, a <strong>Barbearia Alura</strong> traz para o mercado o que há de
+          melhor para seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.
+        </p>
+        <p class="sections__text-style">
+          <em>Nossa missão é:
+            <strong>"Proporcionar auto-estima e qualidade de vida aos clientes."</strong></em>
+        </p>
+        <div class="section__photo-carousel">
+          <figure>
+            <img class="photo-carousel__haircut" src="imgs/haircut1.png" alt="Foto do cabelo cortado de um cliente"/>
+          </figure>
+          <figure>
+            <img class="photo-carousel__haircut" src="imgs/haircut2.png" alt="Foto do cabelo cortado de um cliente"/>
+          </figure>
+          <figure>
+            <img class="photo-carousel__haircut" src="imgs/haircut3.png" alt="Foto do cabelo cortado de um cliente"/>
+          </figure>
         </div>
-        <div class="haircut-card">
-          <img class="cover" src="img/haircut2-unsaturated.png" alt="">
-          <img class="haircut" src="img/haircut2.png" alt="A client's photo">
-        </div>
-        <div class="haircut-card">
-          <img class="cover" src="img/haircut1-unsaturated.png" alt="">
-          <img class="haircut" src="img/haircut1.png" alt="A client's photo">
-        </div>
-      </div>
-      <p class="bottom-text">Oferecemos <strong>profissionais experientes e antenados</strong> às mudanças no mundo da
-        moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos
-        clientes.</p>
-    </section>
-  </main>
+      </section>
 
-  <footer>
-    <span>original project by <a class="azura-link" href="https://www.alura.com.br/" target="_blank">@Alura</a> | coded
-      by <a class="github-link" href="https://github.com/pamesss" target="_blank">@pamesss</a></span>
-  </footer>
-</body>
+      <section class="sections__style">
+        <p class="sections__text-style">
+          Oferecemos <strong>profissionais experientes e antenados</strong> às
+          mudanças no mundo da moda. O atendimento possui padrão de excelência e
+          agilidade, garantindo qualidade e satisfação dos nossos clientes.
+        </p>
+        
+        <div class="showcase__container">
+          <img src="imgs/client-stock-photo.jpg" class="photo-showcase" alt="Um cliente deitado na cadeira de um salão enquanto o barbeador apara sua barba com uma tesoura."/>
+          <div class="showcase__text sections__text-style">
+            <h3 class="showcase__list-title">Benefícios</h3>
+            <ul>
+              <li class="showcase__list-itens"><img class="photo_check-list" src="./imgs/icon_check.png" alt="Ícone da lista">Atendimento aos Clientes</li>
+              <li class="showcase__list-itens"><img class="photo_check-list" src="./imgs/icon_check.png" alt="Ícone da lista">Espaço diferenciado</li>
+              <li class="showcase__list-itens"><img class="photo_check-list" src="./imgs/icon_check.png" alt="Ícone da lista">Localização</li>
+              <li class="showcase__list-itens"><img class="photo_check-list" src="./imgs/icon_check.png" alt="Ícone da lista" >Profissionais Qualificados</li>
+            </ul>
+          </div>
+          
+        </div>
+      </section>
+    </main>
 
+    <footer>
+      <p>
+        original project by<a class="footer_link" href="https://www.alura.com.br/" target="_blank"> @Alura </a>| coded by
+        <a class="footer_link" href="https://github.com/pamesss" target="_blank"> @pamesss</a>
+      </p>
+    </footer>
+  </body>
 </html>

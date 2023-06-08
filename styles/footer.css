@@ -1,0 +1,14 @@
+footer {
+    z-index: 0;
+    text-align: center;
+    height: 70px;
+    padding: 20px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8em;
+    color: var(--white);
+  }
+  .footer_link {
+    text-decoration: none;
+    color: var(--white);
+  }
